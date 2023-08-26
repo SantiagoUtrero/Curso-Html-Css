@@ -6,10 +6,23 @@
     
 }
 #INFO{
-    width: 100%;
+    max-width: 1000%;
     background-color: rgb(0, 0, 0);
     text-align: center;
 }
+
+.body-tienda{
+    background-color: #0f0f0f;
+}
+
+.body-home{
+    background-color: #0f0f0f;
+}
+
+.body-support{
+    background-color: #0f0f0f;
+}
+
 #INFO .grupo-1{
     width: 100%;
     max-width: 1200px;
@@ -60,10 +73,6 @@
     padding: 10px 10px;
     text-align: center;
     color: rgb(235, 235, 235);
-
-}
-body{
-    background-color: rgb(15, 15, 15);
 }
 header{
     background-color: rgb(0, 0, 0);
@@ -71,40 +80,44 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 90px;
+    width: 100%;
     padding: 5px 10%;
 }
-header .logo{
+#header .logo{
     cursor: pointer;
 }
-header .logo img{
+#header .logo img{
     height: 55px;
     width: auto;
     transition: all 300ms;
 }
-header .logo img:hover{
+#header .logo img:hover{
     transform: scale(1.2);
 }
-header nav .lista{
+#header nav .lista{
     list-style: none;
 }
-header nav .lista li{
+#header nav .lista li{
+    display: flex;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     padding: 0 10px;
     
 }
-header nav .lista li :hover{
+#header nav .lista li :hover{
     color: rgb(255, 255, 255);
     transition: all 250ms ease;
 }
-header nav .lista a{
+#header nav .lista a{
     font-size: 100%;
     color: rgb(216, 218, 219);
     text-decoration: none;
 }
-header nav .lista a:hover{
+#header nav .lista a:hover{
     color: white;
 }
-header .button button{
+#header .button button{
     font-weight: 90%;
     color: rgb(255, 255, 255);
     padding: 8px 20px;
@@ -114,7 +127,65 @@ header .button button{
     cursor: pointer;
     transition: all 200ms;
 }
-header .button :hover{
+#header .button :hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 200);
+    transform: scale(1.1);
+}
+#header-principal{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    padding: 5px 10%;
+}
+#header-principal .logo{
+    cursor: pointer;
+}
+#header-principal .logo img{
+    height: 55px;
+    width: auto;
+    transition: all 300ms;
+}
+#header-principal .logo img:hover{
+    transform: scale(1.2);
+}
+#header-principal nav .lista{
+    list-style: none;
+}
+#header-principal nav .lista li{
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    
+}
+#header-principal nav .lista li :hover{
+    color: rgb(255, 255, 255);
+    transition: all 250ms ease;
+}
+#header-principal nav .lista a{
+    font-size: 100%;
+    color: rgb(216, 218, 219);
+    text-decoration: none;
+}
+#header-principal nav .lista a:hover{
+    color: white;
+}
+#header-principal .button button{
+    font-weight: 90%;
+    color: rgb(255, 255, 255);
+    padding: 8px 20px;
+    background: rgb(167, 1, 131);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+#header-principal .button :hover{
     color: rgb(255, 255, 255);
     background-color: rgb(255, 0, 200);
     transform: scale(1.1);
@@ -379,11 +450,11 @@ form .texto{
 .container-cards{
     background-color: #080808;
     width: 100%;
-    max-width: 1100px;
-    display: flex;
-    margin: auto;
+    max-width: 1400px;
+    margin: 0px 210px;
     border-radius: 1px;
-    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 .texto-5{
     padding: 15px 15px;
@@ -408,8 +479,8 @@ form .texto{
     font-size: 300;
 }
 
-.cards{
-    width: 100%;
+.container-cards .cards{
+    width: 300px;
     margin: 20px;
     border-radius: 6px;
     border: 3px solid white;
@@ -436,12 +507,8 @@ form .texto{
 }
 .containerGeneral{
     background-color: #181818;
-    padding-bottom: 45px;
+    
 }
-.containerGeneral2{
-    background-color: #181818;
-    padding-bottom: 150px;
-}   
 .contenido p{
     color: rgb(0, 0, 0);
     font-size: 15px;
@@ -464,61 +531,299 @@ form .texto{
     background: #99024d;
     color: white;
 }
-.cards-2 img{
-    height: 100%;
-    width: 100%;
-    border-radius: 2px;
-}
-.cards-2{
-    height: 300px;
-    width: 300px;
-    margin: 20px;
-    padding: 0;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.527);
-    transition: all .4s ease;
-    overflow: hidden;
-}
-.cards-2:hover{
-    cursor: pointer;
-}
-.tienda-cards{
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 100%;
-    padding: 0;
-    
-}
-.cards-2:hover{
-    transform: scale(1.1);
-    box-shadow: 5px 5px 40px black;
-}
 .best-sellers{
     color: white;
     padding: 15px;
     margin: 15px;
     text-align: center;
     font-size: 30px;
-    text-decoration: underline 1px white;
 }
 .best-sellers span{
     color: #d100c0;
 }
-.roguelikes{
-    background-color: rgb(59, 59, 59);
-}
+
 .roguelikes h2{
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 23px;
     padding: 20px;
 }
 .cards-rogue{
-    display: grid;
-    place-items: center;
-    gap: 20px;
-    grid-template-columns: repeat(8, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 .cards-rogue img{
     height: 200px;
-    padding-bottom: 20px
+    width: 200px;
+    margin: 20px;
+    padding: 0;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+.cards-rogue img:hover{
+    transform: scale(1.1);
+}
+.adventure h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+    padding: 20px;
+}
+.cards-adventure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.cards-adventure img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 0;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+.cards-adventure img:hover{
+    transform: scale(1.1);
+}
+
+.main-tienda{
+    margin-top: 60px;
+margin-bottom: 100px;
+}
+
+.galeria-1{
+    display: flex;
+    width: 635px;
+    height: 430px;
+}
+.galeria-1 img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: all .5s;
+}
+
+.galeria-1 img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.contenedor-galeria{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.cards-f2p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.cards-f2p img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 0;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+.cards-f2p img:hover{
+    transform: scale(1.1);
+}
+.Free-to-play h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+    padding: 20px;
+}
+.games-list{
+    background-color: rgb(5, 5, 5);
+}
+
+.featured a img{
+    height: 150px;
+    width: 150px;
+    margin: 6px;
+    padding: 0;
+}
+.featured{
+    margin-top: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
+
+@media (max-width:420px){
+    .imagen-brotato img{
+        display: none;
+    }
+    .lista{
+        display: none;
+    }
+    .logo img{
+        margin-left: 130px;
+    }
+    .button button{
+        width: 70px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .button{
+        text-decoration: none;
+        margin-left: 70px;
+    }
+    .destacado{ 
+        
+        margin-left: 123px;
+    }
+    .destacado .main-text h3{
+        padding-bottom: 15px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .destacado .main-text h6{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .destacado .main-text h1{
+        font-size: 65px;
+        margin-bottom: 12px;
+    }
+    .destacado .main-text p{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        margin-bottom: 12px;
+        margin-top: 50px;
+    }
+    .destacado .main-text a{
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .destacado .brotato-social{
+        scale: 0.7;
+        padding-bottom: 0;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        
+    }
+    .main-text{
+        width: 390px;
+        right: 70px;
+        margin-bottom: 0;
+        padding-right: 45px;
+    }
+    .destacado{
+        margin: 0%;
+        padding: 90px;
+        width: 390px;
+        right: 70px;
+    }
+    
+    .container-cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 420px;
+        margin: -8px;
+        place-items: center;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        width: 420px;
+        height: 370px;
+    }
+    #INFO{ 
+        width: 420px;
+    }
+    #INFO .grupo-1 .box a img{ 
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+    #INFO .grupo-1 .box h2{ 
+        font-size: 20px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+    #INFO .grupo-1 .box p{ 
+        font-size: 13px;
+        width: 100px;
+        margin-bottom: 0px;
+        padding-right: 15px;
+    }
+    #INFO .grupo-1{ 
+        padding-top: 20px;
+    }
+    .grupo-2{ 
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    #INFO .grupo-1 .box .red-social a{ 
+        margin-top: 3px;
+        margin-left: 0;
+        margin-right: 0px;
+    }
+    #INFO .grupo-1 .box .red-social{ 
+        margin-right: 15px;
+    }
+    .contenedor-galeria{
+        scale: 0.9;
+    }
+    .featured-games{
+        display: none;
+    }
+    .cards-rogue{
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                150px
+            )
+        );
+        gap: 16px;
+        scale: 0,7;
+    }
+    .cards-f2p{
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                150px
+            )
+        );
+        gap: 16px;
+        scale: 0,7;
+    }
+    .cards-adventure{
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                150px
+            )
+        );
+        gap: 16px;
+        scale: 0,7;
+    }
+    .games-list h2{
+        background-color: #b900aa;
+        
+    }
 }
