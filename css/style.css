@@ -87,7 +87,7 @@
         cursor: pointer;
     }
     #header .logo img{
-        height: 55px;
+        height: 80px;
         width: auto;
         transition: all 300ms;
     }
@@ -145,7 +145,7 @@
         cursor: pointer;
     }
     #header-principal .logo img{
-        height: 55px;
+        height: 80px;
         width: auto;
         transition: all 300ms;
     }
@@ -285,7 +285,7 @@
         text-decoration: underline;
         color: #585858;
     }
-    .pepe{
+    .login{
         width: 100%;
         height: 40px;
         border: 1px solid black;
@@ -297,7 +297,7 @@
         cursor: pointer;
         outline: none;
     }
-    .pepe:hover{
+    .login:hover{
         border-color: #db00c9;
         background-color: #e90577;
         transition: .5s;
@@ -326,9 +326,8 @@
         grid-gap: 6rem;
     }
     .imagen-contacto img{
-        max-width: 100%;
-        width: 900px;
-        height: auto;
+        width: 100%;
+        height: 370px;
         border-radius: 10px;
     }
     .contacto-form h1{
@@ -497,7 +496,7 @@
     }
     .cards img{
         width: 100%;
-        height: 210px;
+        height: 280px;
         margin-bottom: 15px;
     }
     .contenido h3{
@@ -593,7 +592,8 @@
 
     .main-tienda{
         margin-top: 60px;
-    margin-bottom: 100px;
+        margin-bottom: 100px;
+        margin-right: 40px;
     }
 
     .galeria-1{
@@ -646,6 +646,7 @@
     }
     .games-list{
         background-color: rgb(5, 5, 5);
+        padding-right: 30px;
     }
 
     .featured a img{
@@ -660,18 +661,192 @@
         align-content: center;
         justify-content: center; 
     }
+    .btn-menu label{
+        text-decoration: none;
+        color: white;
+        line-height: 70px;
+        scale: 2;
+    }
+    #btn-menu{
+        display: none;
+    }
+    .container-menu{
+        position: absolute;
+        background: rgba(0, 0, 0,0.5);
+        width: 100%;
+        height: 400%;
+        top: 0; left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 111;
+    }
+    #btn-menu:checked ~ .container-menu{
+        opacity: 1;
+        visibility: visible;
+    }
 
+    .cont-menu{
+        width: 100%;
+        max-width: 200px;
+        background: #ac0295;
+        height: 400vh;
+        position: relative;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+    #btn-menu:checked ~ .container-menu .cont-menu{
+        transform: translateX(0%);
+    }
+    .cont-menu nav{
+        transform: translateY(15%);
+    }
+    .cont-menu label{
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: white;
+        font-size: 18px;
+    }
+    .cont-menu nav a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 30px;
+        border-left: 5px solid transparent;
+        transition: all 500ms ease;
+    }
+    .cont-menu nav a:hover{
+        border-left: 5px solid white;
+        background: #99024d;
+    }
+
+
+
+    .btn-menu-2 label{
+        text-decoration: none;
+        color: white;
+        line-height: 70px;
+        scale: 2;
+    }
+    #btn-menu-2{
+        display: none;
+    }
+    .container-menu-2{
+        position: absolute;
+        background: rgba(0, 0, 0,0.5);
+        width: 100%;
+        height: 400%;
+        top: 0; left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 111;
+    }
+    #btn-menu-2:checked ~ .container-menu-2{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .cont-menu-2{
+        width: 100%;
+        max-width: 200px;
+        background: #ac0295;
+        height: 400vh;
+        position: relative;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+    #btn-menu-2:checked ~ .container-menu-2 .cont-menu-2{
+        transform: translateX(0%);
+    }
+    .cont-menu-2 nav{
+        transform: translateY(15%);
+    }
+    .cont-menu-2 label{
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: white;
+        font-size: 18px;
+    }
+    .cont-menu-2 nav a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 30px;
+        border-left: 5px solid transparent;
+        transition: all 500ms ease;
+    }
+    .cont-menu-2 nav a:hover{
+        border-left: 5px solid white;
+        background: #99024d;
+    }
+
+
+
+@media (max-width:1920px){
+    .container-menu{ 
+        display: none;
+    }
+    .btn-menu{ 
+        display: none;
+    }
+    .container-menu-2{ 
+        display: none;
+    }
+    .btn-menu-2{ 
+        display: none;
+    }
+}
+@media (max-width:1280px){
+    .container-cards{
+        margin-left: 0px;
+    }
+    .container-cards .cards{
+        margin-left: 0%;
+        width: 242px;
+        margin: 5px;
+    }
+}
+@media (max-width:1024px){
+    .container-cards{
+        margin-left: 0px;
+    }
+    .container-cards .cards{
+        margin-left: 0%;
+        width: 242px;
+        margin: 5px;
+    }
+}
 @media (max-width:830px){ 
     .containerGeneral{ 
-        width: 1100px;
+        width: 1170px;
         margin-right: 0px;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
+    }
+    .imagen-contacto{
+        display: none;
+    }
+    .contacto{
+        scale: 1.1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 135px;
+        padding: 0;
+    }
+    .container-menu{ 
+        display: none;
+    }
+    .btn-menu{ 
+        display: none;
     }
     #INFO{
-        width: 1100px;
+        width: 1170px;
     }
     .container-cards{
-        margin: 0px;
+        margin-left: 0px;
     }
     .container-cards .cards{
         margin-left: 0%;
@@ -679,7 +854,7 @@
         margin: 5px;
     }
     #header-principal{
-        width: 1100px;
+        width: 1170px;
     }
     .imagen-brotato img{ 
         width: 700px;
@@ -693,18 +868,13 @@
     #header{ 
         width: 1100px;
     }
-    .contenedor-galeria{
-        margin-left: 220px;
+    .main-tienda{
+        padding-left: 300px;
     }
-    .best-sellers{
-        margin-left: 235px;
-    }
-    .featured-games{
-        margin-left: 220px;
-    }
+    
     .games-list{
         margin-left: 0px;
-        width: 1050px;
+        width: 1110px;
     }
 }
 
@@ -718,16 +888,16 @@
         margin-left: 0;
     }
     .containerGeneral{ 
-        width: 1150px;
+        width: 1130px;
     }
     #INFO .grupo-1 .box .red-social{ 
         margin-right: 20px;
     }
     #header-principal{
-        width: 1100px;
+        width: 1130px;
     }
     #INFO{
-        width: 1100px;
+        width: 1130px;
     }
     .destacado{ 
         padding-left: 30px;
@@ -738,12 +908,46 @@
     }
 }
 
+
+
 @media (max-width:420px){
     #header-principal{
         width: 410px;
     }
+
+    .container-menu-2{ 
+        display: flex;
+        height: fit-content;
+        
+    }
+    .btn-menu-2{ 
+        display: flex;
+    }
+    .cont-menu-2{ 
+        height: 480vh;
+    }
+    .imagen-contacto{
+        display: none;
+    }
+    .cont-menu{
+        height: 490vh;
+    }
+    .contacto{
+        padding: 0px 0px 0px 10px;
+        height: 100%;
+        margin-left: 0px;
+        scale: 0.9;
+    }
+    .container-menu{ 
+        display: flex;
+        height: 485%;
+    }
+    .btn-menu{ 
+        display: flex;
+    }
     .games-list{
         width: 420px;
+        padding: 0px;
     }
     .contenedor-galeria{
         margin-left: 20px;
@@ -757,6 +961,7 @@
     .containerGeneral{ 
         width: 410px;
         margin-right: 0px;
+        margin-bottom: 0px;
     }
     .containerGeneral .texto-5{ 
         padding: 0;
@@ -783,7 +988,6 @@
         margin-left: 70px;
     }
     .destacado{ 
-        
         margin-left: 123px;
     }
     .destacado .main-text h3{
@@ -846,7 +1050,7 @@
         display: flex;
         justify-content: center;
         width: 420px;
-        height: 370px;
+        height: 400px;
     }
     #INFO{ 
         width: 410px;
@@ -925,6 +1129,33 @@
         background-color: #b900aa;
         
     }
+    .main-tienda{
+        margin-right: 10px;
+        padding-left: 10px;
+        
+    }
+    .contenido p{ 
+        display: none;
+    }
+}
+@media (max-width:400px){
+    .cont-menu{
+        height: 520vh;
+    }
+    .container-menu{ 
+        display: flex;
+        height: 510vh;
+        width: 410px;
+    }
+    .container-menu-2{ 
+        display: flex;
+        height: fit-content;
+        width: 50vh;
+        
+    }
+    .cont-menu-2{ 
+        height: 510vh;
+    }
 }
 
 @media (max-width:375px){ 
@@ -942,4 +1173,80 @@
     #INFO .grupo-1 .box .red-social{ 
         margin-right: 20px;
     }
+    .cont-menu{
+        height: 660vh;
+    }
+    .container-menu{ 
+        display: flex;
+        height: 660vh;
+        width: 420px;
+    }
+    #INFO{
+        width: 420px;
+    }
+    #header{
+        width: 420px;
+    }
+    #header-principal{
+        width: 420px;
+    }
+    .main-text{
+        padding-right: 0px;
+    }
+    .container-menu-2{ 
+        display: flex;
+        height: fit-content;
+        width: 63vh;
+        
+    }
+    .cont-menu-2{ 
+        height: 645vh;
+    }
+}
+    @media (max-width:360px){ 
+        .cont-menu{
+            height: 593vh;
+        }
+        .container-menu{ 
+            display: flex;
+            height: 593vh;
+            width: 420px;
+        }
+        .container-menu-2{ 
+            display: flex;
+            height: fit-content;
+            width: 57vh;
+            
+        }
+        .cont-menu-2{ 
+            height: 583vh;
+        }
+        .main-tienda{
+            padding-left: 60px;
+        }
+        
+}
+        @media (max-width:280px){ 
+            .cont-menu{
+                height: 672vh;
+            }
+            .container-menu{ 
+                display: flex;
+                height: 672vh;
+                width: 420px;
+            }
+            .container-menu-2{ 
+                display: flex;
+                height: fit-content;
+                width: 65vh;
+                
+            }
+            .cont-menu-2{ 
+                height: 560vh;
+            }
+            .main-tienda{
+                display: none;
+            }
+
+
 }
