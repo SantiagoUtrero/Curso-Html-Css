@@ -3,31 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login page">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="santiago utrero">
     <title>LOGIN</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/c19e17d877.js" crossorigin="anonymous"></script>
 </head>
+
 <body id="body-login">
-    <div class="botonlogin">
-        <button type="button"><a href="../index.html">GET BACK</a></button>
+    
+    <header id="header">
+        <div class="btn-menu-2">
+            <label for="btn-menu-2" class="fa fa-bars"></label>
+        </div>
+    
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo2.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul class="lista">
+                <li> <a href="../index.html">HOME</a></li>
+                <li> <a href="./tienda.html">STORE</a></li>
+                <li> <a href="#">COMMUNITY</a></li>
+                <li> <a href="#">PROFILE</a></li>
+                <li> <a href="./contacto.html">SUPPORT</a></li>
+            </ul>
+        </nav>
+        <a href="./login.html" class="button"><button>LOGIN</button></a>
+    </header>
+    
+    <input type="checkbox" id="btn-menu-2">
+    
+    <div class="container-menu-2">
+        <div class="cont-menu-2">
+            <nav>
+                <a href="./tienda.html">STORE</a>
+                <a href="../index.html">HOME</a>
+                <a href="#">COMMUNITY</a>
+                <a href="#">PROFILE</a>
+                <a href="./contacto.html">SUPPORT</a>
+            </nav>
+            <label for="btn-menu-2" class="fa fa-x"></label>
+        </div>
     </div>
+
     <div class="center">
         <h1>Login</h1>
-        <form method="post">
-            <div class="texto">
-                <input type="text" required>
-                <span></span>
-                <label>Username</label>
-            </div>
-            <div class="texto">
-                <input type= "text" required>
-                <span></span>
-                <label>Password</label>
-            </div>
-            <div class="pass">Forget Password?</div>
-            <input type="submit" value="Login" class="login">
-            <div class="signup">
-            Not a member? <a href="./signup.html">Signup</a>
-            </div> 
+            <form method="post">
+                <div class="texto">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+
+                <div class="texto">
+                    <input type= "text" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+
+                <div class="pass">Forget Password?</div>
+
+                <input type="submit" value="Login" class="login">
+
+                <div class="signup">
+                Not a member? <a href="./signup.html">Signup</a>
+                </div> 
         </form> 
     </div>
 
