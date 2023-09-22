@@ -1,0 +1,138 @@
+@use "variables";
+
+
+.body-tienda{
+    background-color: variables.$backgroundbody;
+}
+
+.best-sellers{
+    color: white;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.best-sellers span{
+    color: #d100c0;
+}
+
+.roguelikes h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+    padding: 20px;
+}
+.cards-rogue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.cards-rogue img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 0;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+.cards-rogue img:hover{
+    transform: scale(1.1);
+}
+.adventure h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+    padding: 20px;
+}
+.cards-adventure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.cards-adventure img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 0;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+.cards-adventure img:hover{
+    transform: scale(1.1);
+}
+
+.main-tienda{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-right: 40px;
+}
+
+.galeria-1{
+    display: flex;
+    width: 635px;
+    height: 430px;
+}
+.galeria-1 img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: all .5s;
+}
+
+.galeria-1 img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.contenedor-galeria{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.cards-f2p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.cards-f2p img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    padding: 0;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+.cards-f2p img:hover{
+    transform: scale(1.1);
+}
+.Free-to-play h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+    padding: 20px;
+}
+.games-list{
+    background-color: rgb(5, 5, 5);
+    padding-right: 30px;
+}
+
+.featured a img{
+    height: 150px;
+    width: 150px;
+    margin: 6px;
+    padding: 0;
+}
+.featured{
+    margin-top: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
