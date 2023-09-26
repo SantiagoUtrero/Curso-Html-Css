@@ -53,11 +53,12 @@
     padding: 30px;
     border-left: 5px solid transparent;
     transition: all 500ms ease;
+        &:hover{
+            border-left: 5px solid white;
+            background: #99024d;
+        }
 }
-.cont-menu nav a:hover{
-    border-left: 5px solid white;
-    background: #99024d;
-}
+
 
 
 .btn-menu-2 label{
@@ -114,11 +115,12 @@
     padding: 30px;
     border-left: 5px solid transparent;
     transition: all 500ms ease;
+        &:hover{
+            border-left: 5px solid white;
+            background: #99024d;
+        }
 }
-.cont-menu-2 nav a:hover{
-    border-left: 5px solid white;
-    background: #99024d;
-}
+
 
 
 .btn-menu-3 label{
@@ -175,8 +177,8 @@
     padding: 30px;
     border-left: 5px solid transparent;
     transition: all 500ms ease;
-}
-.cont-menu-3 nav a:hover{
-    border-left: 5px solid white;
-    background: #99024d;
+        &:hover{
+            border-left: 5px solid white;
+            background: #99024d;
+        }
 }

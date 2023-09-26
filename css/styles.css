@@ -453,7 +453,6 @@
   border-left: 5px solid transparent;
   transition: all 500ms ease;
 }
-
 .cont-menu nav a:hover {
   border-left: 5px solid white;
   background: #99024d;
@@ -522,7 +521,6 @@
   border-left: 5px solid transparent;
   transition: all 500ms ease;
 }
-
 .cont-menu-2 nav a:hover {
   border-left: 5px solid white;
   background: #99024d;
@@ -591,7 +589,6 @@
   border-left: 5px solid transparent;
   transition: all 500ms ease;
 }
-
 .cont-menu-3 nav a:hover {
   border-left: 5px solid white;
   background: #99024d;
@@ -623,7 +620,6 @@
   color: white;
   margin-bottom: 40px;
 }
-
 .contacto-form h1 span {
   color: #ff00ea;
 }
@@ -858,11 +854,6 @@
   line-height: 1.2;
   font-weight: 500;
 }
-
-.ctn {
-  margin-left: 15px;
-}
-
 .destacado .main-text a:hover {
   transform: scale(1.1);
   color: rgb(255, 0, 212);
@@ -870,6 +861,9 @@
   transition: 0.3s;
 }
 
+.ctn {
+  margin-left: 15px;
+}
 .ctn i {
   margin-right: 10px;
 }
@@ -1005,13 +999,19 @@
   color: white;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@media (max-width: 1920px) {
+@media (max-width: 2560px) {
+  .container-cards {
+    margin-left: 550px;
+    margin-right: 0px;
+  }
+  .container-cards .cards {
+    width: 242px;
+    margin-left: 50px;
+  }
+  .imagen-brotato img {
+    height: 740px;
+    margin-right: 500px;
+  }
   .container-menu {
     display: none;
   }
@@ -1031,6 +1031,69 @@
     display: none;
   }
 }
+@media (max-width: 1920px) {
+  .container-cards {
+    margin-left: 220px;
+    margin-right: 0px;
+  }
+  .container-cards .cards {
+    width: 242px;
+    margin-left: 50px;
+  }
+  .imagen-brotato img {
+    height: 700px;
+    margin-right: 0px;
+    margin-bottom: 200px;
+  }
+  .imagen-brotato {
+    height: 700px;
+    width: 700px;
+  }
+  .container-menu {
+    display: none;
+  }
+  .btn-menu {
+    display: none;
+  }
+  .container-menu-2 {
+    display: none;
+  }
+  .btn-menu-2 {
+    display: none;
+  }
+  .container-menu-3 {
+    display: none;
+  }
+  .btn-menu-3 {
+    display: none;
+  }
+}
+@media (max-width: 1440px) {
+  .container-cards {
+    margin-left: 20px;
+  }
+  .container-menu {
+    display: none;
+  }
+  .btn-menu {
+    display: none;
+  }
+  .container-menu-2 {
+    display: none;
+  }
+  .btn-menu-2 {
+    display: none;
+  }
+  .container-menu-3 {
+    display: none;
+  }
+  .btn-menu-3 {
+    display: none;
+  }
+  .imagen-brotato img {
+    display: none;
+  }
+}
 @media (max-width: 1280px) {
   .container-cards {
     margin-left: 0px;
@@ -1039,6 +1102,24 @@
     margin-left: 0%;
     width: 242px;
     margin: 5px;
+  }
+  .container-menu {
+    display: none;
+  }
+  .btn-menu {
+    display: none;
+  }
+  .container-menu-2 {
+    display: none;
+  }
+  .btn-menu-2 {
+    display: none;
+  }
+  .container-menu-3 {
+    display: none;
+  }
+  .btn-menu-3 {
+    display: none;
   }
 }
 @media (max-width: 1024px) {
@@ -1050,8 +1131,11 @@
     width: 242px;
     margin: 5px;
   }
+  .imagen-brotato img {
+    display: none;
+  }
 }
-@media (max-width: 830px) {
+@media (max-width: 820px) {
   .containerGeneral {
     width: 1170px;
     margin-right: 0px;
@@ -1095,9 +1179,17 @@
     width: 1170px;
   }
   .imagen-brotato img {
+    display: flex;
+    width: 7000px;
+    height: 700px;
+    margin-left: 365px;
+    margin-bottom: 0px;
+  }
+  .imagen-brotato {
+    display: flex;
     width: 700px;
     height: 700px;
-    margin-left: 500px;
+    margin-bottom: 200px;
   }
   .destacado {
     padding-left: 30px;
@@ -1141,6 +1233,21 @@
   }
   .imagen-brotato img {
     margin-left: 420px;
+  }
+}
+@media (max-width: 540px) {
+  .container-cards {
+    margin-left: 0px;
+  }
+  .container-cards .cards {
+    margin-left: 0%;
+    width: 242px;
+    margin: 5px;
+  }
+  .imagen-brotato img {
+    display: flex;
+    margin-top: 300px;
+    margin-left: 600px;
   }
 }
 @media (max-width: 420px) {
@@ -1216,16 +1323,16 @@
   .logo img {
     margin-left: 130px;
   }
+  .button {
+    text-decoration: none;
+    margin-left: 70px;
+  }
   .button button {
     width: 70px;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .button {
-    text-decoration: none;
-    margin-left: 70px;
   }
   .destacado {
     margin-left: 123px;
@@ -1483,6 +1590,11 @@
   .contacto {
     margin: 60px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=styles.css.map */
